@@ -11,7 +11,7 @@ import com.cucumber.listener.Reporter;
 @CucumberOptions(
         features ="src/test/java/Features",
         glue= "stepdef",
-        plugin = { "pretty", "html:target/cucumber-reports" }
+        plugin = { "pretty", "json:target/cucumber-reports/Cucumber.json" },
       //  monochrome = true
                 )
 
